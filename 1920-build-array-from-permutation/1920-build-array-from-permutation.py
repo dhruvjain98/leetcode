@@ -1,7 +1,7 @@
 class Solution:
     def buildArray(self, nums: List[int]) -> List[int]:
         
-        # ans = [] * len(nums)
+        ans = [] * len(nums)
         
 #         n = len(nums)
 #         # print(n)
