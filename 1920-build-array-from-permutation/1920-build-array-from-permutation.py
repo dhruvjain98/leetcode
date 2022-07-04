@@ -9,7 +9,6 @@ class Solution:
 #         for i in range(n - 1):
 #             ans[i] = nums[nums[i]]
 #             print(ans[i])
-            
 #         return ans
         
         return [nums[i] for i in nums]
