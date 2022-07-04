@@ -1,9 +1,7 @@
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         ans = [0] * len(nums)
-        # ans = list()
         runSum = 0
-        
         for i,num in enumerate(nums):
             runSum += num
             print(i, num, runSum)
