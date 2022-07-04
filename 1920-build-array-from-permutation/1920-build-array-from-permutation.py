@@ -5,7 +5,6 @@ class Solution:
         
 #         n = len(nums)
 #         # print(n)
-        
 #         for i in range(n - 1):
 #             ans[i] = nums[nums[i]]
 #             print(ans[i])
