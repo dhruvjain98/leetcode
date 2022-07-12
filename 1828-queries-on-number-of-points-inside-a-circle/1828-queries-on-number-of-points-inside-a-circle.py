@@ -16,7 +16,5 @@ class Solution:
                     cnt += 1
                 
             answer.append(cnt)
-            
-        # print (answer)
         
         return answer
