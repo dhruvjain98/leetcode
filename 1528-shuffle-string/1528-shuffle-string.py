@@ -5,5 +5,5 @@ class Solution:
         for i in range(0, len(indices)):
             res[indices[i]] = s[i]
         
-        out = "" 
+        out = ""
         return(out.join(res))
