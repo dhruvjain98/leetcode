@@ -8,21 +8,27 @@ class Solution:
         
         for r in range(n):
             maxN = 0
+            maxE = 0
             for c in range(n):
                 if grid[r][c] > maxN:
                     maxN = grid[r][c]
+                
+                if grid[c][r] > maxE:
+                    maxE = grid[c][r]
             
             north[r] = maxN
+            east[r] = maxE
         # print(north)
-            
-        for r in range(n):
-            maxN = 0
-            for c in range(n):
-                if grid[c][r] > maxN:
-                    maxN = grid[c][r]
-            
-            east[r] = maxN
         # print(east)
+            
+#         for r in range(n):
+#             maxN = 0
+#             for c in range(n):
+#                 if grid[c][r] > maxN:
+#                     maxN = grid[c][r]
+            
+#             east[r] = maxN
+#         # print(east)
         
         
         ans = 0
