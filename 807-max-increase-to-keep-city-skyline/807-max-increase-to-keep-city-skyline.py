@@ -28,13 +28,9 @@ class Solution:
         ans = 0
         for i in range(n):
             for j in range(n):
-                # print("{}, {}: ".format(i, j))
                 if (grid[i][j] < min(north[i], east[j])):
                     ans += min(north[i], east[j]) - grid[i][j]
-                    # print("{}, {}: {}".format(i,j, ans))
                     
-        
-        # print(ans)
         return ans
                     
         
