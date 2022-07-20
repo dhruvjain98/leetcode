@@ -6,7 +6,6 @@ class Solution:
         #             return ([i,j])
         
         prevMap = {} # val: index
-        
         for i,n in enumerate(nums):
             diff = target - n
             if diff in prevMap:
