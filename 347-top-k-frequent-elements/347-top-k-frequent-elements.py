@@ -7,6 +7,8 @@ class Solution:
         res = dict()    # num : count
         for i in numsSetList:
             res[i] = nums.count(i)
+            
+        # print(res.get(-1))
         
         resList = sorted(res, key=res.get, reverse = True)
         
