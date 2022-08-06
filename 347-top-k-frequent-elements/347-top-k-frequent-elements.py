@@ -3,7 +3,6 @@ class Solution:
 # 
 #         numsSet = set(nums)
 #         numsSetList = list(numsSet)
-        
 #         res = dict()    # num : count
 #         for i in numsSetList:
 #             res[i] = nums.count(i)
