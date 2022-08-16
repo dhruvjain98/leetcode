@@ -20,11 +20,6 @@ class Solution:
             for mat in matx:
                 i, j = mat[0], mat[1]
                 dfs(r+i, c+j)
-                
-#             dfs(r+1, c)
-#             dfs(r-1, c)
-#             dfs(r, c+1)
-#             dfs(r, c-1) 
 
  
         # 1. Convert unsurrounded to T (edges)
