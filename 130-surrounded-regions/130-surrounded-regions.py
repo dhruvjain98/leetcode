@@ -16,14 +16,21 @@ class Solution:
                 return
             
             board[r][c] = "T"
-            # matx = [[1,0], [-1,0], [0,1], [0,-1]]
-            # for i in range(len(matx)):
-            #     for j in range(len(matx[0])):
-            #         dfs(r+i, c+j)
-            dfs(r+1, c)
-            dfs(r-1, c)
-            dfs(r, c+1)
-            dfs(r, c-1)
+#             dfs(r+1, c)
+#             dfs(r-1, c)
+#             dfs(r, c+1)
+#             dfs(r, c-1)
+            
+            
+            matx = [[1,0], [-1,0], [0,1], [0,-1]]
+            for mat in matx:
+                i, j = mat[0], mat[1]
+                # print("{}, {}".format(r+mat[0], c+mat[1]))
+                dfs(r+i, c+j)
+            
+            
+            
+            
             
         for r in range(ROWS):
             for c in range(COLS):
