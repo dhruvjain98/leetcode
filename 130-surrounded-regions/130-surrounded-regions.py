@@ -16,22 +16,18 @@ class Solution:
                 return
             
             board[r][c] = "T"
-#             dfs(r+1, c)
-#             dfs(r-1, c)
-#             dfs(r, c+1)
-#             dfs(r, c-1)
-            
-            
             matx = [[1,0], [-1,0], [0,1], [0,-1]]
             for mat in matx:
                 i, j = mat[0], mat[1]
-                # print("{}, {}".format(r+mat[0], c+mat[1]))
                 dfs(r+i, c+j)
-            
-            
-            
-            
-            
+                
+#             dfs(r+1, c)
+#             dfs(r-1, c)
+#             dfs(r, c+1)
+#             dfs(r, c-1) 
+
+ 
+        # 1. Convert unsurrounded to T (edges)
         for r in range(ROWS):
             for c in range(COLS):
             
@@ -39,11 +35,13 @@ class Solution:
                     if r in [0, ROWS - 1] or c in [0, COLS - 1]:
                         dfs(r, c)
         
+        # 2. Convert surrounded to X
         for r in range(ROWS):
             for c in range(COLS):
                 if board[r][c] == "O":
                     board[r][c] = "X"
         
+        # 3. Convert T back to O
         for r in range(ROWS):
             for c in range(COLS):
                 if board[r][c] == "T":
