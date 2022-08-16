@@ -42,4 +42,3 @@ class Solution:
                 if board[r][c] == "T":
                     board[r][c] = "O"
                     
-                    
