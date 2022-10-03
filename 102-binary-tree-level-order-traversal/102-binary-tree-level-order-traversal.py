@@ -12,16 +12,16 @@ class Solution:
         
         while q:
             level = []
-            qLen = len(q)
+            qLen = len(q)       # to get number of nodes in each level
             
             for i in range(qLen):
                 node = q.popleft()
-                if node:
+                if node:        # if node is not null
                     level.append(node.val)
                     q.append(node.left)
                     q.append(node.right)
                 
-            if level:
+            if level:           # if level is not null
                 res.append(level)
         
         return res
